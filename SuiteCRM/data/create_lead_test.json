@@ -1,0 +1,14 @@
+{
+  "test_data": [
+    {
+      "first_name": "Ashish",
+      "last_name": "Thakur",
+      "runmode": "Y"
+    },
+    {
+      "first_name": "Ashish",
+      "last_name": "Thakur",
+      "runmode": "N"
+    }
+  ]
+}
