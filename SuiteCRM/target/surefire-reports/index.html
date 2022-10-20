@@ -154,12 +154,13 @@
                   <span class="method-name">createLeadTest</span>
                   <span class="parameters">({"runmode":"Y","last_name":"Thakur","first_name":"Ashish"})</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	Element not present first_name_xpath
+	Element not present username_name
 	at keywords.GenericKeywords.assertAll(GenericKeywords.java:152)
 	at keywords.GenericKeywords.fail(GenericKeywords.java:143)
 	at keywords.GenericKeywords.getElement(GenericKeywords.java:90)
 	at keywords.GenericKeywords.type(GenericKeywords.java:65)
-	at testcases.CreateLeadTest.createLeadTest(CreateLeadTest.java:44)
+	at keywords.ApplicationKeywords.defaultLogin(ApplicationKeywords.java:41)
+	at testcases.CreateLeadTest.createLeadTest(CreateLeadTest.java:41)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
@@ -203,28 +204,16 @@
                   </a> <!-- deleteLeadTest({"runmode":"Y","lead_name":"Glenn Harner"}) -->
                   <span class="method-name">deleteLeadTest</span>
                   <span class="parameters">({"runmode":"Y","lead_name":"Glenn Harner"})</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Glenn Harner&quot;}
-  (Session info: chrome=105.0.5195.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
-System info: host: &apos;DESKTOP-BKVHFCN&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ABHISH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 720c8b459ac56f9d89036e7005b26794
-*** Element info: {Using=link text, value=Glenn Harner}
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:230)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
-	at keywords.ApplicationKeywords.gotoLead(ApplicationKeywords.java:48)
-	at testcases.DeleteLeadTest.deleteLeadTest(DeleteLeadTest.java:45)
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Element not present username_name
+	at keywords.GenericKeywords.assertAll(GenericKeywords.java:152)
+	at keywords.GenericKeywords.fail(GenericKeywords.java:143)
+	at keywords.GenericKeywords.getElement(GenericKeywords.java:90)
+	at keywords.GenericKeywords.type(GenericKeywords.java:65)
+	at keywords.ApplicationKeywords.defaultLogin(ApplicationKeywords.java:41)
+	at testcases.DeleteLeadTest.deleteLeadTest(DeleteLeadTest.java:41)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 35 stack frames
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -324,19 +313,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'deleteLeadTest')
 data.setCell(0, 2, 'testcases.DeleteLeadTest')
-data.setCell(0, 3, 37789);
+data.setCell(0, 3, 32598);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createLeadTest')
-data.setCell(1, 2, 'testcases.CreateLeadTest')
-data.setCell(1, 3, 26592);
+data.setCell(1, 1, 'doLogin')
+data.setCell(1, 2, 'testcases.LoginTest')
+data.setCell(1, 3, 22678);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'doLogin')
-data.setCell(2, 2, 'testcases.LoginTest')
-data.setCell(2, 3, 14063);
+data.setCell(2, 1, 'createLeadTest')
+data.setCell(2, 2, 'testcases.CreateLeadTest')
+data.setCell(2, 3, 22621);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'createLeadTest')
 data.setCell(3, 2, 'testcases.CreateLeadTest')
-data.setCell(3, 3, 1);
+data.setCell(3, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -376,57 +365,57 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">doLogin({"runmode":"Y","password":"will","username":"will"})</span>
-                <span class="method-start">408 ms</span>
+                <span class="method-start">665 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">14481 ms</span>
+                <span class="method-start">23363 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.CreateLeadTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">15417 ms</span>
+                <span class="method-start">24646 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">createLeadTest({"runmode":"Y","last_name":"Thakur","first_name":"Ashish"})</span>
-                <span class="method-start">15418 ms</span>
+                <span class="method-start">24647 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">42011 ms</span>
+                <span class="method-start">47270 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">42054 ms</span>
+                <span class="method-start">47354 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createLeadTest({"runmode":"N","last_name":"Thakur","first_name":"Ashish"})</span>
-                <span class="method-start">42055 ms</span>
+                <span class="method-start">47354 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">42056 ms</span>
+                <span class="method-start">47357 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.DeleteLeadTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">42106 ms</span>
+                <span class="method-start">47463 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">deleteLeadTest({"runmode":"Y","lead_name":"Glenn Harner"})</span>
-                <span class="method-start">42106 ms</span>
+                <span class="method-start">47463 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quit</span>
-                <span class="method-start">79898 ms</span>
+                <span class="method-start">80064 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -33,7 +33,6 @@ public class GenericKeywords {
 	public Properties prop;
 	public ExtentTest test;
 	public SoftAssert softAssert;
-
 	
 	public void openBrowser(String browserName) {
 		log("Opening the browser "+browserName);

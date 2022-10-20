@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 19 07:21:06 IST 2022</td>
+<td>Started on:</td><td>Wed Oct 19 07:31:18 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26660 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22782 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,23 +77,25 @@ function toggleAllBoxes() {
 <tr>
 <td title='testcases.CreateLeadTest.createLeadTest()'><b>createLeadTest</b><br>Test class: testcases.CreateLeadTest<br>Parameters: {"runmode":"Y","last_name":"Thakur","first_name":"Ashish"}</td>
 <td><div><pre>java.lang.AssertionError: The following asserts failed:
-	Element not present first_name_xpath
+	Element not present username_name
 	at keywords.GenericKeywords.assertAll(GenericKeywords.java:152)
 	at keywords.GenericKeywords.fail(GenericKeywords.java:143)
 	at keywords.GenericKeywords.getElement(GenericKeywords.java:90)
 	at keywords.GenericKeywords.type(GenericKeywords.java:65)
-	at testcases.CreateLeadTest.createLeadTest(CreateLeadTest.java:44)
+	at keywords.ApplicationKeywords.defaultLogin(ApplicationKeywords.java:41)
+	at testcases.CreateLeadTest.createLeadTest(CreateLeadTest.java:41)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1412564235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1412564235'><pre>java.lang.AssertionError: The following asserts failed:
-	Element not present first_name_xpath
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1560670039", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1560670039'><pre>java.lang.AssertionError: The following asserts failed:
+	Element not present username_name
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
 	at keywords.GenericKeywords.assertAll(GenericKeywords.java:152)
 	at keywords.GenericKeywords.fail(GenericKeywords.java:143)
 	at keywords.GenericKeywords.getElement(GenericKeywords.java:90)
 	at keywords.GenericKeywords.type(GenericKeywords.java:65)
-	at testcases.CreateLeadTest.createLeadTest(CreateLeadTest.java:44)
+	at keywords.ApplicationKeywords.defaultLogin(ApplicationKeywords.java:41)
+	at testcases.CreateLeadTest.createLeadTest(CreateLeadTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -127,7 +129,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
-<td>26</td>
+<td>22</td>
 <td>testcases.CreateLeadTest@23e028a9</td></tr>
 <tr>
 <td title='testcases.LoginTest.doLogin()'><b>doLogin</b><br>Test class: testcases.LoginTest<br>Parameters: {"runmode":"Y","password":"will","username":"will"}</td>
@@ -137,8 +139,8 @@ function toggleAllBoxes() {
 	at keywords.GenericKeywords.fail(GenericKeywords.java:143)
 	at testcases.LoginTest.doLogin(LoginTest.java:46)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1029898472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1029898472'><pre>java.lang.AssertionError: The following asserts failed:
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1489322191", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1489322191'><pre>java.lang.AssertionError: The following asserts failed:
 	User could not login
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
@@ -178,7 +180,7 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
-<td>14</td>
+<td>22</td>
 <td>testcases.LoginTest@6b09bb57</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -194,8 +196,8 @@ function toggleAllBoxes() {
 	at keywords.GenericKeywords.skip(GenericKeywords.java:148)
 	at testcases.CreateLeadTest.createLeadTest(CreateLeadTest.java:37)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1564078808", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1564078808'><pre>org.testng.SkipException: Skipping the test as runmode is N
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1771687225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1771687225'><pre>org.testng.SkipException: Skipping the test as runmode is N
 	at keywords.GenericKeywords.skip(GenericKeywords.java:148)
 	at testcases.CreateLeadTest.createLeadTest(CreateLeadTest.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

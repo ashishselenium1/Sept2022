@@ -2,16 +2,16 @@
 <testng-results skipped="1" failed="3" ignored="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="80027" started-at="2022-10-19T07:20:50 IST" finished-at="2022-10-19T07:22:10 IST">
+  <suite name="Suite" duration-ms="80225" started-at="2022-10-19T07:30:53 IST" finished-at="2022-10-19T07:32:14 IST">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="15341" started-at="2022-10-19T07:20:50 IST" finished-at="2022-10-19T07:21:06 IST">
+    <test name="Login Test" duration-ms="24599" started-at="2022-10-19T07:30:53 IST" finished-at="2022-10-19T07:31:18 IST">
       <class name="testcases.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:testcases.LoginTest@6b09bb57]" name="init" is-config="true" duration-ms="407" started-at="2022-10-19T07:20:50 IST" finished-at="2022-10-19T07:20:51 IST">
+        <test-method status="PASS" signature="init()[pri:0, instance:testcases.LoginTest@6b09bb57]" name="init" is-config="true" duration-ms="663" started-at="2022-10-19T07:30:54 IST" finished-at="2022-10-19T07:30:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="doLogin(org.json.simple.JSONObject)[pri:0, instance:testcases.LoginTest@6b09bb57]" name="doLogin" duration-ms="14063" started-at="2022-10-19T07:20:51 IST" data-provider="getData" finished-at="2022-10-19T07:21:05 IST">
+        <test-method status="FAIL" signature="doLogin(org.json.simple.JSONObject)[pri:0, instance:testcases.LoginTest@6b09bb57]" name="doLogin" duration-ms="22678" started-at="2022-10-19T07:30:54 IST" data-provider="getData" finished-at="2022-10-19T07:31:17 IST">
           <params>
             <param index="0">
               <value>
@@ -70,19 +70,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.LoginTest@6b09bb57]" name="quit" is-config="true" duration-ms="798" started-at="2022-10-19T07:21:05 IST" finished-at="2022-10-19T07:21:06 IST">
+        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.LoginTest@6b09bb57]" name="quit" is-config="true" duration-ms="1139" started-at="2022-10-19T07:31:17 IST" finished-at="2022-10-19T07:31:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- testcases.LoginTest -->
     </test> <!-- Login Test -->
-    <test name="Create Lead Test" duration-ms="26660" started-at="2022-10-19T07:21:06 IST" finished-at="2022-10-19T07:21:33 IST">
+    <test name="Create Lead Test" duration-ms="22782" started-at="2022-10-19T07:31:18 IST" finished-at="2022-10-19T07:31:41 IST">
       <class name="testcases.CreateLeadTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:testcases.CreateLeadTest@23e028a9]" name="init" is-config="true" duration-ms="1" started-at="2022-10-19T07:21:06 IST" finished-at="2022-10-19T07:21:06 IST">
+        <test-method status="PASS" signature="init()[pri:0, instance:testcases.CreateLeadTest@23e028a9]" name="init" is-config="true" duration-ms="1" started-at="2022-10-19T07:31:18 IST" finished-at="2022-10-19T07:31:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="FAIL" signature="createLeadTest(org.json.simple.JSONObject)[pri:0, instance:testcases.CreateLeadTest@23e028a9]" name="createLeadTest" duration-ms="26592" started-at="2022-10-19T07:21:06 IST" data-provider="getData" finished-at="2022-10-19T07:21:33 IST">
+        <test-method status="FAIL" signature="createLeadTest(org.json.simple.JSONObject)[pri:0, instance:testcases.CreateLeadTest@23e028a9]" name="createLeadTest" duration-ms="22621" started-at="2022-10-19T07:31:18 IST" data-provider="getData" finished-at="2022-10-19T07:31:41 IST">
           <params>
             <param index="0">
               <value>
@@ -93,18 +93,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-Element not present first_name_xpath]]>
+Element not present username_name]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-Element not present first_name_xpath
+Element not present username_name
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
 at keywords.GenericKeywords.assertAll(GenericKeywords.java:152)
 at keywords.GenericKeywords.fail(GenericKeywords.java:143)
 at keywords.GenericKeywords.getElement(GenericKeywords.java:90)
 at keywords.GenericKeywords.type(GenericKeywords.java:65)
-at testcases.CreateLeadTest.createLeadTest(CreateLeadTest.java:44)
+at keywords.ApplicationKeywords.defaultLogin(ApplicationKeywords.java:41)
+at testcases.CreateLeadTest.createLeadTest(CreateLeadTest.java:41)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,15 +144,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createLeadTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.CreateLeadTest@23e028a9]" name="quit" is-config="true" duration-ms="43" started-at="2022-10-19T07:21:33 IST" finished-at="2022-10-19T07:21:33 IST">
+        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.CreateLeadTest@23e028a9]" name="quit" is-config="true" duration-ms="83" started-at="2022-10-19T07:31:41 IST" finished-at="2022-10-19T07:31:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="init()[pri:0, instance:testcases.CreateLeadTest@23e028a9]" name="init" is-config="true" duration-ms="1" started-at="2022-10-19T07:21:33 IST" finished-at="2022-10-19T07:21:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="createLeadTest(org.json.simple.JSONObject)[pri:0, instance:testcases.CreateLeadTest@23e028a9]" name="createLeadTest" duration-ms="1" started-at="2022-10-19T07:21:33 IST" data-provider="getData" finished-at="2022-10-19T07:21:33 IST">
+        <test-method status="SKIP" signature="createLeadTest(org.json.simple.JSONObject)[pri:0, instance:testcases.CreateLeadTest@23e028a9]" name="createLeadTest" duration-ms="2" started-at="2022-10-19T07:31:41 IST" data-provider="getData" finished-at="2022-10-19T07:31:41 IST">
           <params>
             <param index="0">
               <value>
@@ -205,15 +202,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createLeadTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.CreateLeadTest@23e028a9]" name="quit" is-config="true" duration-ms="16" started-at="2022-10-19T07:21:33 IST" finished-at="2022-10-19T07:21:33 IST">
+        <test-method status="PASS" signature="init()[pri:0, instance:testcases.CreateLeadTest@23e028a9]" name="init" is-config="true" duration-ms="0" started-at="2022-10-19T07:31:41 IST" finished-at="2022-10-19T07:31:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.CreateLeadTest@23e028a9]" name="quit" is-config="true" duration-ms="65" started-at="2022-10-19T07:31:41 IST" finished-at="2022-10-19T07:31:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- testcases.CreateLeadTest -->
     </test> <!-- Create Lead Test -->
-    <test name="Delete Lead Test" duration-ms="37866" started-at="2022-10-19T07:21:33 IST" finished-at="2022-10-19T07:22:10 IST">
+    <test name="Delete Lead Test" duration-ms="32673" started-at="2022-10-19T07:31:41 IST" finished-at="2022-10-19T07:32:14 IST">
       <class name="testcases.DeleteLeadTest">
-        <test-method status="FAIL" signature="deleteLeadTest(org.json.simple.JSONObject)[pri:0, instance:testcases.DeleteLeadTest@627551fb]" name="deleteLeadTest" duration-ms="37789" started-at="2022-10-19T07:21:33 IST" data-provider="getData" finished-at="2022-10-19T07:22:10 IST">
+        <test-method status="FAIL" signature="deleteLeadTest(org.json.simple.JSONObject)[pri:0, instance:testcases.DeleteLeadTest@627551fb]" name="deleteLeadTest" duration-ms="32598" started-at="2022-10-19T07:31:41 IST" data-provider="getData" finished-at="2022-10-19T07:32:14 IST">
           <params>
             <param index="0">
               <value>
@@ -221,43 +222,22 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Glenn Harner"}
-  (Session info: chrome=105.0.5195.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
-System info: host: 'DESKTOP-BKVHFCN', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ABHISH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 720c8b459ac56f9d89036e7005b26794
-*** Element info: {Using=link text, value=Glenn Harner}]]>
+              <![CDATA[The following asserts failed:
+Element not present username_name]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Glenn Harner"}
-  (Session info: chrome=105.0.5195.127)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
-System info: host: 'DESKTOP-BKVHFCN', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ABHISH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 720c8b459ac56f9d89036e7005b26794
-*** Element info: {Using=link text, value=Glenn Harner}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
-at org.openqa.selenium.By$ByLinkText.findElement(By.java:230)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
-at keywords.ApplicationKeywords.gotoLead(ApplicationKeywords.java:48)
-at testcases.DeleteLeadTest.deleteLeadTest(DeleteLeadTest.java:45)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Element not present username_name
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at keywords.GenericKeywords.assertAll(GenericKeywords.java:152)
+at keywords.GenericKeywords.fail(GenericKeywords.java:143)
+at keywords.GenericKeywords.getElement(GenericKeywords.java:90)
+at keywords.GenericKeywords.type(GenericKeywords.java:65)
+at keywords.ApplicationKeywords.defaultLogin(ApplicationKeywords.java:41)
+at testcases.DeleteLeadTest.deleteLeadTest(DeleteLeadTest.java:41)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -292,15 +272,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteLeadTest -->
-        <test-method status="PASS" signature="init()[pri:0, instance:testcases.DeleteLeadTest@627551fb]" name="init" is-config="true" duration-ms="0" started-at="2022-10-19T07:21:33 IST" finished-at="2022-10-19T07:21:33 IST">
+        <test-method status="PASS" signature="init()[pri:0, instance:testcases.DeleteLeadTest@627551fb]" name="init" is-config="true" duration-ms="0" started-at="2022-10-19T07:31:41 IST" finished-at="2022-10-19T07:31:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.DeleteLeadTest@627551fb]" name="quit" is-config="true" duration-ms="71" started-at="2022-10-19T07:22:10 IST" finished-at="2022-10-19T07:22:10 IST">
+        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.DeleteLeadTest@627551fb]" name="quit" is-config="true" duration-ms="69" started-at="2022-10-19T07:32:14 IST" finished-at="2022-10-19T07:32:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
